@@ -1,20 +1,20 @@
 package org.example;
 
-public class Cat implements Animals {
-    String name = "мурка";
-    int age = 10;
-    String color = "Серый";
-    boolean isSwiming = false;
+public class Dog implements Animals {
+    String name = "Бобик";
+    int age = 5;
+    String color = "Коричневый";
+    boolean isSwiming = true;
     boolean isFlying = false;
 
     @Override
     public int id() {
-        return 1;
+        return 2;
     }
 
     @Override
     public String type() {
-        return "Кот";
+        return "Собака";
     }
 
     @Override
@@ -24,7 +24,7 @@ public class Cat implements Animals {
                 "isSwiming = %b%n" +
                 "isFlying = %b%n" +
                 "Color = %s%n" +
-                "type = %s%n" +
+                "Type = %s%n" +
                 "Id = %d%n", name, age, isSwiming, isFlying, color, type(), id());
     }
 }

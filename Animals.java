@@ -1,17 +1,10 @@
 package org.example;
-/**
- * Класс животных
- */
 
-public class Animals {
-    public int age;
-    public String name;
-    public boolean isSwiming;
-    public boolean isFlying;
-    /**
-     * Звук животного
-     */
-    public void sound() {
+public interface Animals {
+    int id();
+
+    default String type() {
+        String typeOfAnimal = null;
+        return typeOfAnimal;
     }
-
 }
